@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo de Firma Electrónica en PHP</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Firma Electrónica en PDF</h2>
+        <form action="process.php" method="post" enctype="multipart/form-data">
+            <label for="pdf">Selecciona el documento PDF:</label><br>
+            <input type="file" name="pdf" id="pdf" accept="application/pdf" required><br><br>
+
+            <label for="signature">Selecciona tu firma (PNG):</label><br>
+            <input type="file" name="signature" id="signature" accept="image/png" required><br><br>
+
+            <input type="submit" value="Firmar PDF">
+        </form>
+        <p class="note">Nota: Asegúrate de que la firma tenga un fondo transparente para mejores resultados.</p>
+    </div>
+</body>
+</html>
